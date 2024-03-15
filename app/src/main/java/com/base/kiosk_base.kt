@@ -13,7 +13,7 @@ fun main() {
     var select : Int = 0
     val cartcheck = GlobalScope.launch {
         while(true) {
-            delay(10000) //너무 자주나와서 기존 2배로 변경
+            delay(10000) //너무 자주 발생하여 입력에 방해가됨. 2배로 변경해둠.
             println("현재 주문 대기수 : ${cart.check()}")
         }
     }
@@ -26,7 +26,7 @@ fun main() {
         for (i in 0 until max) {
             println("${i+1}.${category[i]} || ${information[i]}")
         }
-        if(cart.isNotEmpty()) { //장바구니에 있는 경우에만 등장하게 처리.(자동 예외처리)
+        if(cart.isNotEmpty()) { //장바구니에 있는 경우에만 등장하게 처리함으로 예외처리
             println("5.Pay            || 결제하기")
             max = category.size + 1 //입력값 예외도 변경
         }
@@ -126,7 +126,7 @@ fun showMenu(menuType: String) {
 fun allMenus(): ArrayList<AbstractMenu> { //해당 방법을 위해 각 클래스 파일구조 형식 변경 -> 참조. Hamburger
     val menus = ArrayList<AbstractMenu>()
 
-    val hamburger= arrayListOf<AbstractMenu>(//모든 이름의 가시성을 위해 동일한 여백을 부여해봄. 해당 방식말고, 함수로 처리할 수 있는지 추가 공부 필요(카트에 담기는 값 기준)
+    val hamburger= arrayListOf<AbstractMenu>(//모든 이름의 가시성을 위해 동일한 여백을 부여해봄. 해당 방식말고, 함수로 처리할 수 있는지 추가 공부 필요(카트에 담기는 값 기준) format을 통해서 자리수를 채울수있다(변예진님 -> println("%-20s", "%-5s").format(item,price etc..) -Ns 를 통해 N만큼 값을 보충하는 것으로 보임.
         HamBurger(index = 1, name = "ShackBurger           ", price = 6.9, info = "토마토, 양상추, 쉑소스가 토핑된 치즈버거"),
         HamBurger(index = 2, name = "SmokeShack            ", price = 8.9, info = "베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거"),
         HamBurger(index = 3, name = "ShroomBurger          ", price = 9.4, info = "몬스터 치즈와 체다 치즈로 속을 채운 베지테리안 버거"),
