@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Drink">
+
+    <TableLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_coffee"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/coffedrink"/>
+
+            <ImageButton
+                android:id="@+id/btn_can"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/candrink"/>
+
+            <ImageButton
+                android:id="@+id/btn_soft"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/softdrink"/>
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+
+
+            <ImageButton
+                android:id="@+id/btn_water"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/waterdrink"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</FrameLayout>

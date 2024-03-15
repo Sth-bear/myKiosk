@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Side">
+
+    <TableLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/btn_fried"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/fried"/>
+
+            <ImageButton
+                android:id="@+id/btn_nugget"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background = "@drawable/nugget" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/cheesestick" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>

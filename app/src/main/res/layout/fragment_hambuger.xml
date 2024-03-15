@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hambuger">
+
+    <TableLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/btn_burger"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/hambuger"/>
+
+            <ImageButton
+                android:id="@+id/btn_cheese_burger"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background = "@drawable/cheeseburger" />
+
+            <ImageButton
+                android:id="@+id/btn_hot_dog"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/hotdog" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>
